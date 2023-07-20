@@ -3,4 +3,4 @@ sudo docker run -it --ipc host \
 --device /dev/video1:/dev/video1 \
 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 -e DISPLAY=$DISPLAY \
-social_dist bash
+sound_detect bash
