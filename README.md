@@ -6,7 +6,7 @@ This is a docker and tutorial for edge device.
 ## Steps
 1. download zip from: https://github.com/waggle-sensor/plugin-yamnet/tree/main
 2. command the 26th line "RUN sage-cli.py storage files download ${BUCKET_ID_MODEL} lite-model_yamnet_tflite_1.tflite --target /app/lite-model_yamnet_tflite_1.tflite" in Dockerfile
-3. upload "lite-model_yamnet_classification_tflite_1.tflite" to the same level as "Dockerfile"
+3. upload "lite-model_yamnet_tflite_1.tflite" to the same level as "Dockerfile"
 4. run `build.sh` to build docker image.
 5. run `$ xhost +` in local to allow host connection.
 6. run `run.sh` to create and start container.
