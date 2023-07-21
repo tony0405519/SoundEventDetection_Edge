@@ -15,6 +15,7 @@ This is a docker and tutorial for edge device.
 - Make sure `$DISPLAY` is the same in local and docker. Run `$ echo $DISPLAY` to check. If not, set docker's variable to right. Run `$ export DISPAY={what's in local}`.
 - The package version list can't be the same in PC and Xavier, I'm still trying to figure out the problem.
 - `Dockerfile_xavier is also compatible with PC`
+- Ubuntu docker裡面抓不到 webcam的mic, 但外面可以
 
 ## Todo
 - Jetson Nano
