@@ -8,11 +8,12 @@
 FROM waggle/plugin-base:1.1.1-base
 
 RUN apt-get update \
-  && apt-get install -y \
-  pulseaudio \
+  && apt-get install -y pulseaudio \
   && rm -rf /var/lib/apt/lists/*
   
-RUN apt-get install libportaudio2
+# RUN apt update \
+#   && apt-get install libportaudio2 \
+#   && apt-get install python3-pyaduio
 
 COPY * /app/
 RUN pip3 install numpy --upgrade
