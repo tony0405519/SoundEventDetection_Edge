@@ -8,4 +8,4 @@ sudo docker run -it --ipc host \
 -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
 -v ~/.config/pulse/cookie:/root/.config/pulse/cookie \
 --group-add $(getent group audio | cut -d: -f3) \
-sound_detect bash
+sound_detect
